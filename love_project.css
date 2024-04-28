@@ -1,0 +1,96 @@
+body {
+    background-color: rgb(237, 180, 161);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+#line {
+    color: black;
+    align-items: center;
+    font-family: cursive;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 431px;
+    margin-left: -170px;
+}
+
+.card {
+    position: relative;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform: perspective(2000px);
+    transition: .5s;
+
+}
+
+.card-front {
+    position: relative;
+    background-color: rgb(128, 89, 160);
+    width: 320px;
+    height: 454px;
+    margin-top: 162px;
+    transform-origin: left;
+    transition: .5s;
+    box-shadow: inset 30px 10px 100px rgba(0, 0, 0, .1), 0 0 50px rgba(0, 0, 0, .1);
+    margin-left: 103px;
+}
+
+.front-image {
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.img1 {
+    margin-left: 18px;
+    margin-top: 250px;
+}
+
+.img2 {
+    margin-left: 193px;
+    margin-top: -71px;
+}
+
+.heart {
+    margin-left: 150px;
+    margin-top: -12px;
+}
+
+.card-inside {
+    position: relative;
+    background-color: #e9dfd1;
+    width: 320px;
+    height: 454px;
+    z-index: -2;
+    left: -319px;
+    top: 80px;
+    box-shadow: inset 30px 10px 100px rgba(0, 0, 0, .1), 0 0 50px rgba(0, 0, 0, .1);
+}
+
+.card:hover {
+    transform: perspective(2000px) rotate(2deg);
+}
+
+.card:hover .card-front {
+    transform: rotateY(-160deg);
+    box-shadow: 0 10px 100px rgba(0, 0, 0, .1);
+}
+
+.card-front:hover {
+    transform: rotateY(-160deg);
+    box-shadow: 0 10px 100px rgba(0, 0, 0, .1);
+}
+
+.prapose {
+    font-family: cursive;
+    font-size: 21px;
+    margin-left: -600px;
+    margin-top: -55px;
+}
+
+.prapose:before {
+    /*content: "xxx";*/
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
